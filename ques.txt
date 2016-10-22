@@ -1,0 +1,19 @@
+a) What is dialog?
+A dialog is a small window that prompts the user to make a decision or enter additional information.
+
+
+
+b) How to create custom dialog?
+1. Two XML files, one for main screen, one for custom dialog.
+2. create method to display dialog, Attach the layout to Dialog [Ex: dialog.setContentView(R.layout.dialog)]
+3. create onClick method to display dialog and dialog button functionalities
+
+
+
+c) How to use existing dialogs?
+1. Make 2nd class which extends DialogFragment
+
+2. @Override public Dialog onCreateDialog(Bundle ){
+and return new AlertDialog.Builder(getActivity())
+
+3. In MainActivity -> create Object to this class and call .show() method
